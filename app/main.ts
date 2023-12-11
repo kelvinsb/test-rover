@@ -55,9 +55,9 @@ function readAndOperate(restOfLines: string[], plateau: Plateau) {
 
   plateau.insertRover(positionX, positionY, facingNormalized);
 
-  const aaa = secondLine.split("");
-  aaa.forEach((item) => {
-    plateau.executeCommand(item as CommandProps);
+  const commands = secondLine.split("");
+  commands.forEach((command) => {
+    plateau.executeCommand(command as CommandProps);
   });
   readAndOperate(rest, plateau);
 }
