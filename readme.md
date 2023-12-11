@@ -55,6 +55,7 @@ His attributes:
 
 ## Commands
 
+- **Install dependencies**: `yarn` or `npm install`
 - **Unit and integration tests**: `yarn test` or `npm run test`
 - **Execute**(input by file: `input.txt`, output: `output.txt`): `yarn build && yarn start` or `npm run build && npm run start`
   - A `output.txt` will be created on root folder with the final rover's position/result.
